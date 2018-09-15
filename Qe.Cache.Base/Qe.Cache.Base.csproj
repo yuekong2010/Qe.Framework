@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{678E48BF-EFBC-44A8-B847-27294CE97239}</ProjectGuid>
+    <ProjectGuid>{15801A51-1710-4368-9942-B050E9249FC7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Qe.Util</RootNamespace>
-    <AssemblyName>Qe.Util</AssemblyName>
+    <RootNamespace>Qe.Cache.Base</RootNamespace>
+    <AssemblyName>Qe.Cache.Base</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,8 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database\FieldValueParam.cs" />
-    <Compile Include="Model\Pagination.cs" />
+    <Compile Include="CacheId.cs" />
+    <Compile Include="ICache.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

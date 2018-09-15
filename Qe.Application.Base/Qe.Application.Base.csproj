@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{678E48BF-EFBC-44A8-B847-27294CE97239}</ProjectGuid>
+    <ProjectGuid>{909C2EB3-CDF4-4704-B146-1272E85681C0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Qe.Util</RootNamespace>
-    <AssemblyName>Qe.Util</AssemblyName>
+    <RootNamespace>Qe.Application.Base</RootNamespace>
+    <AssemblyName>Qe.Application.Base</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,9 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database\FieldValueParam.cs" />
-    <Compile Include="Model\Pagination.cs" />
+    <Compile Include="Organization\User\UserBLL.cs" />
+    <Compile Include="Organization\User\UserEntity.cs" />
+    <Compile Include="Organization\User\UserIBLL.cs" />
+    <Compile Include="Organization\User\UserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Qe.Util\Qe.Util.csproj">
+      <Project>{678E48BF-EFBC-44A8-B847-27294CE97239}</Project>
+      <Name>Qe.Util</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
